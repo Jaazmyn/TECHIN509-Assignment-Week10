@@ -45,8 +45,8 @@ class Board:
                 return self.grid[i][0]
             if self.grid[0][i] != " " and all(self.grid[j][i] == self.grid[0][i] for j in range(len(self.grid))):
                 return self.grid[0][i]
-
-        return ""  # No winner
+        
+        return ""# no winner
         
     
     def is_full(self) -> bool:
